@@ -1,7 +1,7 @@
 # streamingjsxmlparser
 An efficient XML parser for JS. Implements part of [the XML specification.](https://www.w3.org/TR/xml/)
 
-* Streaming: This algorithmic 
+* Streaming: This algorithmic optimization makes it several times faster than a typical XML parser.
 
 Rationale: This parser does not build a tree, which causes memory allocation and creates GC pressure. Instead, it parses in a stream, looking at it character-by-character. Modern superscalar CPUs are very efficient at those types of operations.
 
