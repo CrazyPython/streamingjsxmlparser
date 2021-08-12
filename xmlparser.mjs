@@ -1,6 +1,7 @@
 function error(message) {
   throw new Error(message);
 }
+// "NONC" is short for "noncompliant." It indicates where this parser deviates from the XML spec.
 export class XMLParser {
   /*::
   i: number
